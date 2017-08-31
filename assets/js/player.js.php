@@ -23,6 +23,8 @@ var global_error = new Array('', <?php for($i = 0; $i < count($slots); $i++):?>0
 var tab_start = new Array('', <?php for($i = 0; $i < count($slots); $i++):?>1,<?php endfor; ?>);
 var playerArray = new Array();
 
+var limit = 6;
+
 var playerVars = {
         'autoplay': 0,
         'controls': 0,
@@ -49,7 +51,7 @@ function onYouTubeIframeAPIReady() {
         } else if (event.data == YT.PlayerState.PAUSED) {
             pause();
         } else if (event.data == YT.PlayerState.ENDED) {
-            rewind();
+            //rewind();
         } else if (event.data == YT.PlayerState.CUED) {
             
         }
@@ -201,6 +203,7 @@ function rewind() {
     pause();
 
     for (var i = 0; i < playerArray.length; i++) {
+        if (i >= limit) break;
         playerArray[i].seekTo(1);
     }
 
@@ -212,6 +215,7 @@ function rewind() {
 function play() {
 
     for (var i = 0; i < playerArray.length; i++) {
+        if (i >= limit) break;
         playerArray[i].playVideo(1);
     }
 
@@ -224,6 +228,7 @@ function play() {
 function stop() {
 
     for (var i = 0; i < playerArray.length; i++) {
+        if (i >= limit) break;
         playerArray[i].stopVideo(1);    
     }
 
@@ -233,6 +238,7 @@ function stop() {
 function pause() {
 
     for (var i = 0; i < playerArray.length; i++) {
+        if (i >= limit) break;
         playerArray[i].pauseVideo(1);
     }
 
