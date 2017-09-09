@@ -309,7 +309,7 @@
         <div class="row">
             <div class="columns large-10 large-offset-1 end">
                 <ol>
-                    <li>Hier ist Dein <a href="">Playalong</a>. Hier ist Dein <a href="">Leadsheet</a>.</li>
+                    <li>Hier ist Dein <a download="freunde_click_120bpm.wav" href="downloads/freunde_click_120bpm.wav">Playalong</a>. Hier ist Dein <a href="">Leadsheet</a>.</li>
                     <li>Übe das Stück, bis es sitzt.</li>
                     <li>Nimm' Deine Performance auf Video auf. Hier die <a href="">Specs</a>.</li>
                     <li>Lade das Video bei YouTube hoch. Hier die <a href="">Specs</a>.</li>

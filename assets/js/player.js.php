@@ -23,7 +23,7 @@ var global_error = new Array('', <?php for($i = 0; $i < count($slots); $i++):?>0
 var tab_start = new Array('', <?php for($i = 0; $i < count($slots); $i++):?>1,<?php endfor; ?>);
 var playerArray = new Array();
 
-var limit = 6;
+var limit = 4;
 
 var playerVars = {
         'autoplay': 0,
@@ -45,15 +45,16 @@ function onYouTubeIframeAPIReady() {
         //console.log(player_id + ":" + event.data + ":" + event.target.getVideoLoadedFraction());
 
         if (event.data == YT.PlayerState.BUFFERING) {
-            
+            event.target.mute();
         } else if (event.data == YT.PlayerState.PLAYING) {               
             play();
         } else if (event.data == YT.PlayerState.PAUSED) {
             pause();
+            event.target.unMute();
         } else if (event.data == YT.PlayerState.ENDED) {
             //rewind();
         } else if (event.data == YT.PlayerState.CUED) {
-            
+            event.target.unMute();
         }
     }
 
@@ -61,7 +62,6 @@ function onYouTubeIframeAPIReady() {
         event.target.setPlaybackQuality('tiny');
         event.target.seekTo(1);
         
-
         buffer();
 
         //event.target.pauseVideo();
@@ -86,10 +86,6 @@ function onYouTubeIframeAPIReady() {
         <?php $counter++; ?>
     <?php endforeach; ?>
     
-}
-
-function buffer_() {
-
 }
 
 function buffer() {
@@ -207,7 +203,7 @@ function rewind() {
         playerArray[i].seekTo(1);
     }
 
-    play();
+    //play();
 
     return false;
 }

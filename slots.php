@@ -2,6 +2,30 @@
 
 $slots = array(
     array(
+        'position' => 'Keys I',
+        'name' => 'Piano',
+        'youtube_id' => '1FNb5PXICv8',
+        'image' => 'https://scontent.ftxl1-1.fna.fbcdn.net/v/t1.0-9/11149560_10204177688662550_8299272863714289814_n.jpg?oh=7f8bdb7de39d8260eb97b5d8d08e7192&oe=5A17E0D6',
+    ),
+    array(
+        'position' => 'Keys II',
+        'name' => 'Brass',
+        'youtube_id' => 'c-t9xjgpiL8',
+        'image' => 'https://scontent.ftxl1-1.fna.fbcdn.net/v/t1.0-9/11149560_10204177688662550_8299272863714289814_n.jpg?oh=7f8bdb7de39d8260eb97b5d8d08e7192&oe=5A17E0D6',
+    ),
+    array(
+        'position' => 'Keys III',
+        'name' => 'Synth',
+        'youtube_id' => 'pqulYPir0Tg',
+        'image' => 'https://scontent.ftxl1-1.fna.fbcdn.net/v/t1.0-9/11149560_10204177688662550_8299272863714289814_n.jpg?oh=7f8bdb7de39d8260eb97b5d8d08e7192&oe=5A17E0D6',
+    ),
+    array(
+        'position' => 'Keys IV',
+        'name' => 'E-Piano',
+        'youtube_id' => '-fjZMtsxsXI',
+        'image' => 'https://scontent.ftxl1-1.fna.fbcdn.net/v/t1.0-9/11149560_10204177688662550_8299272863714289814_n.jpg?oh=7f8bdb7de39d8260eb97b5d8d08e7192&oe=5A17E0D6',
+    ),
+    array(
         'position' => 'Gesang',
         'name' => 'Hannes',
         'youtube_id' => 'pNtu7hS6oKc',
@@ -19,6 +43,13 @@ $slots = array(
         'youtube_id' => 'QQvvAaCEDjc',
         'image' => 'https://scontent.ftxl1-1.fna.fbcdn.net/v/t1.0-1/p160x160/20032073_10213355838074381_1208217404505045179_n.jpg?oh=6d74934616c7f616090af804570478c3&oe=5A3961DD',
     ),
+    array(
+        'position' => 'Gesang',
+        'name' => 'Hannes',
+        'youtube_id' => 'pNtu7hS6oKc',
+        'image' => 'https://scontent.ftxl1-1.fna.fbcdn.net/v/t1.0-1/p160x160/20032073_10213355838074381_1208217404505045179_n.jpg?oh=6d74934616c7f616090af804570478c3&oe=5A3961DD',
+    ),
+    /*
     array(
         'position' => 'Keys',
         'name' => 'Andrei I',
@@ -50,7 +81,7 @@ $slots = array(
         'youtube_id' => 'LQe1p5AZpO4',
         'image' => 'https://scontent.ftxl1-1.fna.fbcdn.net/v/t1.0-1/p160x160/20032073_10213355838074381_1208217404505045179_n.jpg?oh=6d74934616c7f616090af804570478c3&oe=5A3961DD',
     ),
-    /*
+    
     array(
         'position' => 'Keyboards',
         'name' => 'Andrei',

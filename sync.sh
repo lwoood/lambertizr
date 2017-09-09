@@ -1,1 +1,1 @@
-rsync -auv . lwoood@adhara.uberspace.de:/home/lwoood/html/lambert-reloaded/
+rsync -auv . lwoood@adhara.uberspace.de:/home/lwoood/html/lambert-reloaded/  --exclude 'audio'
