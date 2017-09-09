@@ -23,7 +23,7 @@ var global_error = new Array('', <?php for($i = 0; $i < count($slots); $i++):?>0
 var tab_start = new Array('', <?php for($i = 0; $i < count($slots); $i++):?>1,<?php endfor; ?>);
 var playerArray = new Array();
 
-var limit = 4;
+var limit = 7;
 
 var playerVars = {
         'autoplay': 0,
